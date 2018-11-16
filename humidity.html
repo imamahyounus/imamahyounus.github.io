@@ -2,23 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeatherPy Visualization</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Humidity</title>
+
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    
-    
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
-
 <body>
 
-    <!-- Nav Bar -->
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -35,9 +31,9 @@
                     <span class="nav-color">Latitude</span>
                 </a>
             </div>
-            
+                
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        
+            
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
                         <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
@@ -58,24 +54,20 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-1"></div>
+
             <div class="col-md-7">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <h2>Summary: Latitude vs. X</h2>
+                        <h2>Humidity</h2>
                         <hr>
-                        <img src="max_temp.png" alt="max temp" style="width:40%; float: left; margin:5px;">
-                        <p class="text">The purpose of this project was to analyze how weather changes as you get closer to the equator.
-                            To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-                            <br>
-                            <br>
-                            After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
-                            Factors we looked at included: max temperature, cloudiness, wind speed, and humidity.
-                            This site provides the source data and visualizations created as part of the analysis, as well as
-                            explanations and descriptions of any trends and correlations witnessed.
+                        <img src="humidity.png" alt="" style="width:100%; margin: 5px">
+                        <p class="text2">Surpisingly, the humditiy in a city does not ahve a strong correlation with
+                            the latitude. Citites across the entire latitude range have similar humidity levels.
                         </p>
                     </div>
                 </div>
             </div>
+
             <div class="col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-body">
@@ -89,7 +81,7 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                 <a href="humidity.html">
-                                    <img src="humidity.png" alt="" style="width:100%">
+                                    <img src="humidity.png" alt="" style="width:100%" class="current">
                                 </a>
                             </div>
                         </div>
